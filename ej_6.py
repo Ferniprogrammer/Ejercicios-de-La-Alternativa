@@ -1,9 +1,9 @@
 def descuentos(cantidad, COMMAQ, BEL, descuento, final, compañia):
     cantidad = int(input("Ingrese la cantidad de productos: "))
-    if cantidad < 0:
+    while cantidad < 0:
         print("No puede haber productos negativos")
         cantidad = int(input("Ingrese la cantidad de productos: "))
-    elif 10000 <= cantidad <= 20000:
+    if 10000 <= cantidad <= 20000:
         descuento = 0.10
     elif 20000 < cantidad <= 40000:
         descuento = 0.15
